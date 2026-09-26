@@ -18,7 +18,7 @@ function loadWelcome() {
     var params = new URLSearchParams(location.search);
     var operatorName = params.get("user") || "";
     if (operatorName.length > 0) {
-        document.getElementById("welcome").innerHTML =
+        document.getElementById("welcome").textContent =
             "Connected as: " + operatorName;
     }
 }
